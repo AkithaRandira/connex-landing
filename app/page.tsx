@@ -1,7 +1,6 @@
 "use client"
-
 import type React from "react"
-import { useState, useEffect, useRef } from "react"
+import { useEffect, useState } from "react"
 import HeroSection from "../components/hero-section"
 import AboutSection from "../components/about-section"
 import ProductsSection from "../components/products-section"
@@ -12,75 +11,69 @@ import CTASection from "../components/cta-section"
 import FooterSection from "../components/footer-section"
 
 export default function LandingPage() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+    window.addEventListener("scroll", onScroll)
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
   return (
-    <div className="w-full min-h-screen relative bg-[#F7F5F3] overflow-x-hidden">
-      <div className="relative w-full">
-        <div className="w-full relative flex flex-col justify-start items-center min-h-screen">
-          <div className="w-full pt-[9px] overflow-hidden flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-16 relative z-10">
-            {/* Navigation */}
-            <div className="w-full h-12 sm:h-14 md:h-16 lg:h-[84px] absolute left-0 top-0 flex justify-center items-center z-20 px-6 sm:px-8 md:px-12 lg:px-16">
-              <div className="w-full h-0 absolute left-0 top-6 sm:top-7 md:top-8 lg:top-[42px] border-t border-[rgba(55,50,47,0.12)] shadow-[0px_1px_0px_white]"></div>
+    <div className="w-full min-h-screen bg-[#F7F5F3] overflow-x-hidden">
+      {/* Floating Navbar */}
+      <nav className="fixed top-6 left-0 w-full z-50 flex justify-center px-6 sm:px-8 md:px-12 lg:px-16">
+        <div
+          className={`w-full max-w-4xl h-12 sm:h-14 md:h-[58px] px-6 bg-white/90 backdrop-blur-xl border border-[rgba(55,50,47,0.12)] rounded-full flex justify-between items-center transition-all duration-300 ${
+            scrolled
+              ? "shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
+              : "shadow-[0_4px_14px_rgba(0,0,0,0.05)]"
+          }`}
+        >
+          {/* Logo */}
+          <a href="/" className="text-[#2F3037] text-sm sm:text-base md:text-lg font-semibold whitespace-nowrap">
+            Zentria Labs
+          </a>
 
-              <div className="w-full max-w-7xl h-10 sm:h-11 md:h-12 py-1.5 sm:py-2 px-3 sm:px-4 md:px-6 pr-2 sm:pr-3 bg-[#F7F5F3] backdrop-blur-sm shadow-[0px_0px_0px_2px_white] overflow-hidden rounded-[50px] flex justify-between items-center relative z-30">
-                <div className="flex justify-center items-center">
-                  <div className="flex justify-start items-center">
-                    <div className="flex flex-col justify-center text-[#2F3037] text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-5 font-sans">
-                      Zentria Labs
-                    </div>
-                  </div>
-                  <div className="pl-3 sm:pl-4 md:pl-5 lg:pl-5 flex justify-start items-start hidden sm:flex flex-row gap-2 sm:gap-3 md:gap-4 lg:gap-4">
-                    <div className="flex justify-start items-center">
-                      <div className="flex flex-col justify-center text-[rgba(49,45,43,0.80)] text-xs md:text-[13px] font-medium leading-[14px] font-sans">
-                        Products
-                      </div>
-                    </div>
-                    <div className="flex justify-start items-center">
-                      <div className="flex flex-col justify-center text-[rgba(49,45,43,0.80)] text-xs md:text-[13px] font-medium leading-[14px] font-sans">
-                        About
-                      </div>
-                    </div>
-                    <div className="flex justify-start items-center">
-                      <div className="flex flex-col justify-center text-[rgba(49,45,43,0.80)] text-xs md:text-[13px] font-medium leading-[14px] font-sans">
-                        Contact
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="h-6 sm:h-7 md:h-8 flex justify-start items-start gap-2 sm:gap-3">
-                  <div className="px-2 sm:px-3 md:px-[14px] py-1 sm:py-[6px] bg-white shadow-[0px_1px_2px_rgba(55,50,47,0.12)] overflow-hidden rounded-full flex justify-center items-center">
-                    <div className="flex flex-col justify-center text-[#37322F] text-xs md:text-[13px] font-medium leading-5 font-sans">
-                      Contact Us
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Hero Section */}
-            <HeroSection />
-
-            {/* About Section */}
-            <AboutSection />
-
-            {/* Products Section */}
-            <ProductsSection />
-
-            {/* Why Choose Section */}
-            <WhyChooseSection />
-
-            {/* Tech Section */}
-            <TechSection />
-
-            {/* Future Products Section */}
-            <FutureProductsSection />
-
-            {/* CTA Section */}
-            <CTASection />
-
-            {/* Footer Section */}
-            <FooterSection />
+          {/* Links */}
+          <div className="hidden md:flex items-center gap-2 absolute left-1/2 -translate-x-1/2">
+            <a href="/company" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+              <span className="relative z-10">Company</span>
+              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+            </a>
+            <a href="#products" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+              <span className="relative z-10">Products</span>
+              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+            </a>
+            <a href="#about" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+              <span className="relative z-10">About</span>
+              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+            </a>
+            <a href="#contact" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+              <span className="relative z-10">Blog</span>
+              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+            </a>
           </div>
+
+          {/* CTA */}
+          <button className="px-5 py-2 bg-[#2F3037] text-white rounded-full text-sm font-medium hover:bg-[#1F2024] transition shadow-sm">
+            Contact Us
+          </button>
         </div>
+      </nav>
+
+      {/* Content with top padding to clear navbar */}
+      <div className="pt-28 sm:pt-32 md:pt-36">
+        <HeroSection />
+        <AboutSection />
+        <ProductsSection />
+        <WhyChooseSection />
+        <TechSection />
+        <FutureProductsSection />
+        <CTASection />
+        <FooterSection />
       </div>
     </div>
   )
