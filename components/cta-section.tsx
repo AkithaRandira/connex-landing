@@ -2,48 +2,46 @@
 
 export default function CTASection() {
   return (
-    <div className="w-full relative overflow-hidden flex flex-col justify-center items-center gap-2">
+    <div className="w-full bg-white flex flex-col justify-center items-center">
       {/* Content */}
-      <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 border-t border-b border-[rgba(55,50,47,0.12)] flex justify-center items-center gap-6 relative z-10">
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <div className="w-full h-full relative">
-            {Array.from({ length: 300 }).map((_, i) => (
-              <div
-                key={i}
-                className="absolute h-4 w-full rotate-[-45deg] origin-top-left outline outline-[0.5px] outline-[rgba(3,7,18,0.08)] outline-offset-[-0.25px]"
-                style={{
-                  top: `${i * 16 - 120}px`,
-                  left: "-100%",
-                  width: "300%",
-                }}
-              ></div>
-            ))}
-          </div>
-        </div>
+      <section className="w-full py-20 sm:py-24 md:py-32 flex flex-col items-center px-6 sm:px-8 md:px-12">
+        <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-8">
+          
+          {/* Headline */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
+            Ready to Transform Your Workflow?
+          </h2>
+          
+          {/* Subheading */}
+          <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
+            Join thousands of freelancers who've streamlined their work
+            <br className="hidden sm:block" />
 
-        <div className="w-full max-w-[586px] px-6 py-5 md:py-8 overflow-hidden rounded-lg flex flex-col justify-start items-center gap-6 relative z-20">
-          <div className="self-stretch flex flex-col justify-start items-start gap-3">
-            <div className="self-stretch text-center flex justify-center flex-col text-[#49423D] text-3xl md:text-5xl font-semibold leading-tight md:leading-[56px] font-sans tracking-tight">
-              Ready to centralize your workflows?
-            </div>
-            <div className="self-stretch text-center text-[#605A57] text-base leading-7 font-sans font-medium">
-              Join professionals who trust Zentria Labs to build
-              <br />
-              the micro-SaaS tools that streamline their daily work.
-            </div>
-          </div>
-          <div className="w-full max-w-[497px] flex flex-col justify-center items-center gap-12">
-            <div className="flex justify-start items-center gap-4">
-              <div className="h-10 px-12 py-[6px] relative bg-[#37322F] shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset] overflow-hidden rounded-full flex justify-center items-center cursor-pointer hover:bg-[#2A2520] transition-colors">
-                <div className="w-44 h-[41px] absolute left-0 top-0 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,0,0.10)] mix-blend-multiply"></div>
-                <div className="flex flex-col justify-center text-white text-[13px] font-medium leading-5 font-sans">
-                  Explore Our Products
-                </div>
-              </div>
-            </div>
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <a 
+              href="#products"
+              className="px-8 py-4 bg-[#37322F] text-white rounded-full font-semibold text-base hover:bg-[#1F1B19] transition-all duration-200 shadow-sm hover:shadow-md text-center"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Explore Our Products
+            </a>
+            <a 
+              href="https://subchecks.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white border-2 border-[#37322F] text-[#37322F] rounded-full font-semibold text-base hover:bg-[#37322F] hover:text-white transition-all duration-200 text-center"
+            >
+              Try SubChecks Free
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }

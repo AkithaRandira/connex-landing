@@ -18,31 +18,23 @@ export default function ProductsSection() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-background to-muted/20">
+    <div className="w-full bg-[#F7F5F3]">
       {/* Header Section */}
-      <div className="container mx-auto px-6 py-20 md:py-32">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <CustomBadge
-            icon={
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="2" width="10" height="10" stroke="currentColor" strokeWidth="1.5" fill="none" />
-                <rect x="4.5" y="4.5" width="5" height="5" fill="currentColor" />
-              </svg>
-            }
-            text="Our Products"
-          />
+      <section className="w-full py-20 sm:py-24 md:py-32 flex flex-col items-center px-6 sm:px-8 md:px-12">
+        <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-6">
           
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-            Built for modern
-            <br />
-            workflows
-          </h1>
+          {/* Headline */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
+            Built for Modern Workflows
+          </h2>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Each product is crafted to solve specific workflow challenges with clean interfaces and powerful automation.
+          {/* Subheading */}
+          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
+            <br className="hidden sm:block" />
+            Clean interfaces and powerful automation for freelancers.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* Products Grid */}
       <div className="container mx-auto px-6 pb-32">

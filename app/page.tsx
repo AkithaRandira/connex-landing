@@ -5,7 +5,7 @@ import HeroSection from "../components/hero-section"
 import AboutSection from "../components/about-section"
 import ProductsSection from "../components/products-section"
 import WhyChooseSection from "../components/why-choose-section"
-import TechSection from "../components/tech-section"
+
 import FutureProductsSection from "../components/future-products-section"
 import CTASection from "../components/cta-section"
 import FooterSection from "../components/footer-section"
@@ -104,7 +104,7 @@ export default function LandingPage() {
         <div id="why-choose">
           <WhyChooseSection />
         </div>
-        <TechSection />
+
         <div id="future-products">
           <FutureProductsSection />
         </div>

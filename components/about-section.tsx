@@ -13,30 +13,20 @@ function Badge({ icon, text }: { icon: React.ReactNode; text: string }) {
 
 export default function AboutSection() {
   return (
-    <div className="w-full border-b border-[rgba(55,50,47,0.12)] flex flex-col justify-center items-center">
-      <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 py-8 sm:py-12 md:py-16 border-b border-[rgba(55,50,47,0.12)] flex justify-center items-center gap-6">
-        <div className="w-full max-w-[586px] px-4 sm:px-6 py-4 sm:py-5 shadow-[0px_2px_4px_rgba(50,45,43,0.06)] overflow-hidden rounded-lg flex flex-col justify-start items-center gap-3 sm:gap-4 shadow-none">
-          <Badge
-            icon={
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1" y="1" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-                <rect x="7" y="1" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-                <rect x="1" y="7" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-                <rect x="7" y="7" width="4" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-              </svg>
-            }
-            text="About Zentria Labs"
-          />
-          <div className="w-full max-w-[472.55px] text-center flex justify-center flex-col text-[#49423D] text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
-            Engineering-focused software studio
-          </div>
-          <div className="self-stretch text-center text-[#605A57] text-sm sm:text-base font-normal leading-6 sm:leading-7 font-sans">
-            We're a team of engineers building targeted micro-SaaS solutions
-            <br className="hidden sm:block" />
-            that solve real workflow problems with precision and simplicity.
-          </div>
-        </div>
+    <section className="w-full py-20 sm:py-24 md:py-32 bg-white flex flex-col items-center px-6 sm:px-8 md:px-12">
+      <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-6">
+
+        {/* Headline */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
+          Engineering-Focused Software Studio
+        </h2>
+
+        {/* Subheading */}
+        <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
+          We're a team of engineers building targeted micro-SaaS solutions.
+        </p>
+
       </div>
-    </div>
+    </section>
   )
 }
