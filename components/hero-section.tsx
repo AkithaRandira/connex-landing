@@ -2,7 +2,7 @@
 
 export default function HeroSection() {
   return (
-    <section className="w-full pt-28 sm:pt-36 md:pt-44 pb-20 sm:pb-24 flex flex-col items-center px-6 sm:px-8 md:px-12">
+    <section className="w-full pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-24 flex flex-col items-center px-6 sm:px-8 md:px-12">
       <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-8">
 
         {/* Headline */}
@@ -12,20 +12,32 @@ export default function HeroSection() {
 
         {/* Subheading */}
         <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
-          Purpose-built micro-SaaS tools that help freelancers organize projects,
+          Micro-SaaS tools built for freelancers to organize projects and manage clients.
           <br className="hidden sm:block" />
-          manage clients, and focus on what matters most.
+         
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-          <button className="px-8 py-3 rounded-full bg-[#37322F] text-white font-medium hover:bg-[#2A2520] transition-all">
+          <a 
+            href="#products" 
+            className="px-8 py-3 rounded-full bg-[#37322F] text-white font-medium hover:bg-[#2A2520] transition-all text-center"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Explore Our Products
-          </button>
+          </a>
 
-          <button className="px-8 py-3 rounded-full bg-white text-[#37322F] font-medium border border-[rgba(55,50,47,0.12)] hover:bg-gray-50 transition-all">
+          <a 
+            href="https://subchecks.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-8 py-3 rounded-full bg-white text-[#37322F] font-medium border border-[rgba(55,50,47,0.12)] hover:bg-gray-50 transition-all text-center"
+          >
             Learn about SubChecks →
-          </button>
+          </a>
         </div>
 
       </div>

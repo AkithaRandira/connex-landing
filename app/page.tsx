@@ -39,19 +39,47 @@ export default function LandingPage() {
 
           {/* Links */}
           <div className="hidden md:flex items-center gap-2 absolute left-1/2 -translate-x-1/2">
-            <a href="/company" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+            <a 
+              href="#about" 
+              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <span className="relative z-10">Company</span>
               <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
-            <a href="#products" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+            <a 
+              href="#products" 
+              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <span className="relative z-10">Products</span>
               <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
-            <a href="#about" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+            <a 
+              href="#why-choose" 
+              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('why-choose')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <span className="relative z-10">About</span>
               <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
-            <a href="#contact" className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group">
+            <a 
+              href="#future-products" 
+              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('future-products')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <span className="relative z-10">Blog</span>
               <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
@@ -67,11 +95,19 @@ export default function LandingPage() {
       {/* Content with top padding to clear navbar */}
       <div className="pt-28 sm:pt-32 md:pt-36">
         <HeroSection />
-        <AboutSection />
-        <ProductsSection />
-        <WhyChooseSection />
+        <div id="about">
+          <AboutSection />
+        </div>
+        <div id="products">
+          <ProductsSection />
+        </div>
+        <div id="why-choose">
+          <WhyChooseSection />
+        </div>
         <TechSection />
-        <FutureProductsSection />
+        <div id="future-products">
+          <FutureProductsSection />
+        </div>
         <CTASection />
         <FooterSection />
       </div>
