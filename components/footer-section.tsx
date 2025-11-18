@@ -6,8 +6,15 @@ export default function FooterSection() {
       <div className="w-full max-w-6xl mx-auto px-6 sm:px-8 md:px-12 py-16 flex flex-col sm:flex-row justify-between items-start gap-12">
 
         {/* Left Side */}
-        <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-semibold">Zentria Labs</h2>
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-3">
+            <img 
+              src="/ZentriaLabs_Logo.png" 
+              alt="Zentria Labs Logo" 
+              className="h-8 w-auto"
+            />
+            <h2 className="text-2xl font-semibold">Zentria Labs</h2>
+          </div>
           <p className="text-sm text-gray-400">
             Building micro-SaaS tools for modern workflows.
           </p>

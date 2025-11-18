@@ -33,7 +33,12 @@ export default function LandingPage() {
           }`}
         >
           {/* Logo */}
-          <a href="/" className="text-[#2F3037] text-sm sm:text-base md:text-lg font-semibold whitespace-nowrap">
+          <a href="/" className="flex items-center gap-2 text-[#2F3037] text-sm sm:text-base md:text-lg font-semibold whitespace-nowrap">
+            <img 
+              src="/ZentriaLabs_Logo.png" 
+              alt="Zentria Labs Logo" 
+              className="h-6 w-auto"
+            />
             Zentria Labs
           </a>
 

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function Header() {
   return (
@@ -6,7 +7,16 @@ export function Header() {
       <div className="max-w-[1060px] mx-auto px-4">
         <nav className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-8">
-            <div className="text-[#37322f] font-semibold text-lg">Brillance</div>
+            <div className="flex items-center gap-2">
+              <Image 
+                src="/ZentriaLabs_Logo.png" 
+                alt="Zentria Labs Logo" 
+                width={28}
+                height={28}
+                className="h-7 w-auto"
+              />
+              <div className="text-[#37322f] font-semibold text-lg">Zentria Labs</div>
+            </div>
             <div className="hidden md:flex items-center space-x-6">
               <button className="text-[#37322f] hover:text-[#37322f]/80 text-sm font-medium">Products</button>
               <button className="text-[#37322f] hover:text-[#37322f]/80 text-sm font-medium">Pricing</button>
