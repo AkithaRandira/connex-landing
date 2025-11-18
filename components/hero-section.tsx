@@ -7,12 +7,12 @@ export default function HeroSection() {
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
-          Streamline Your Freelance Workflow
+          Transform Your Freelance Experience with Our SaaS Solutions
         </h1>
 
         {/* Subheading */}
         <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
-          SaaS tools built for freelancers to organize projects and manage clients.
+          Effortlessly organize projects and manage clients with our specialized tools.
           <br className="hidden sm:block" />
          
         </p>

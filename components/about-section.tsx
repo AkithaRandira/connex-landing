@@ -18,7 +18,7 @@ export default function AboutSection() {
 
         {/* Headline */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
-          Engineering-Focused Software Studio
+          Engineering Focused Software Studio
         </h2>
 
         {/* Subheading */}
