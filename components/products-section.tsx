@@ -18,7 +18,7 @@ export default function ProductsSection() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className="w-full bg-[#F7F5F3]">
+    <div className="w-full bg-gradient-to-b from-[#F7F5F3] via-[#F5F6F8] to-white">
       {/* Header Section */}
       <section className="w-full py-20 sm:py-24 md:py-32 flex flex-col items-center px-6 sm:px-8 md:px-12">
         <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-6">
@@ -40,28 +40,26 @@ export default function ProductsSection() {
       <div className="container mx-auto px-6 pb-32">
         <div className="max-w-7xl mx-auto">
           {/* SubChecks Product Card */}
-          <Card className="overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl bg-card">
+          <Card className="overflow-hidden border-2 hover:border-blue-200 transition-all duration-300 hover:shadow-[0_20px_60px_rgba(59,130,246,0.15)] bg-gradient-to-br from-white to-blue-50/30">
             <div className="flex flex-col">
               {/* Content Section - Above Preview */}
               <div className="p-8 md:p-12 bg-white">
                 <div className="max-w-4xl mx-auto space-y-6 text-center">
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center shadow-xl">
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <div className="flex items-center justify-center gap-4 mb-4">
+                    <div className="w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl flex items-center justify-center shadow-lg">
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        <circle cx="12" cy="12" r="9" stroke="white" strokeWidth="2"/>
+                        <circle cx="12" cy="12" r="9" stroke="white" strokeWidth="1.5" fill="none"/>
                       </svg>
                     </div>
                     <div>
                       <h3 className="text-3xl md:text-4xl font-bold">SubChecks</h3>
-                      <p className="text-sm text-muted-foreground font-medium mt-1">Subscription Management</p>
+                      <p className="text-sm text-muted-foreground font-medium">Subscription Management</p>
                     </div>
                   </div>
                   
-                  <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-                    Track and manage all your subscriptions in one place.
-                    <br />
-                    Get notified before renewals and never lose track of recurring payments.
+                  <p className="text-muted-foreground text-base leading-relaxed max-w-xl mx-auto">
+                    Track and manage all your subscriptions in one place. Get notified before renewals and never lose track of recurring payments.
                   </p>
                 </div>
               </div>
@@ -88,11 +86,11 @@ export default function ProductsSection() {
                   </div>
                   
                   {/* Website Preview Image */}
-                  <div className="w-full h-[calc(100%-2.25rem)] bg-white p-4">
+                  <div className="w-full h-[calc(100%-2.25rem)] bg-white">
                     <img 
                       src="/subchecks.png"
                       alt="SubChecks Preview"
-                      className="w-full h-full object-contain rounded-lg"
+                      className="w-full h-full object-cover"
                     />
                   </div>
 
@@ -108,7 +106,7 @@ export default function ProductsSection() {
               </div>
 
               {/* CTA Buttons - After Image */}
-              <div className="p-8 md:p-12 bg-white border-t">
+              <div className="p-8 md:p-12 bg-white">
                 <div className="max-w-4xl mx-auto">
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button 

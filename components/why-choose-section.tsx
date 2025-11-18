@@ -109,7 +109,7 @@ export default function WhyChooseSection() {
               Modern stack, proven results
             </h2>
             <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
-              Enterprise-grade technologies powering scalable solutions.
+              Enterprise grade technologies powering scalable solutions.
               <br className="hidden sm:block" />
               Built for performance, designed for growth.
             </p>

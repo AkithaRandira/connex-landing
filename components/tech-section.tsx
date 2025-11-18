@@ -22,7 +22,7 @@ export default function TechSection() {
   ]
 
   return (
-    <div className="w-full border-b border-[rgba(55,50,47,0.12)] flex flex-col justify-center items-center">
+    <div className="w-full border-b border-[rgba(55,50,47,0.12)] bg-gradient-to-b from-white via-blue-50/20 to-slate-50/30 flex flex-col justify-center items-center">
       <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 py-8 sm:py-12 md:py-16 border-b border-[rgba(55,50,47,0.12)] flex justify-center items-center gap-6">
         <div className="w-full max-w-[586px] px-4 sm:px-6 py-4 sm:py-5 shadow-[0px_2px_4px_rgba(50,45,43,0.06)] overflow-hidden rounded-lg flex flex-col justify-start items-center gap-3 sm:gap-4 shadow-none">
           <Badge
@@ -54,12 +54,12 @@ export default function TechSection() {
           {techStack.map((tech, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg border border-[rgba(55,50,47,0.12)] p-6 h-24 sm:h-28 md:h-32 flex flex-col justify-center items-center gap-2 shadow-[0px_2px_8px_rgba(55,50,47,0.04)] hover:shadow-[0px_4px_16px_rgba(55,50,47,0.08)] transition-shadow"
+              className="bg-gradient-to-br from-white to-blue-50/40 rounded-lg border border-[rgba(55,50,47,0.12)] hover:border-blue-200/50 p-6 h-24 sm:h-28 md:h-32 flex flex-col justify-center items-center gap-2 shadow-[0px_2px_8px_rgba(59,130,246,0.06)] hover:shadow-[0px_8px_24px_rgba(59,130,246,0.12)] transition-all duration-300 hover:scale-105"
             >
-              <div className="text-2xl sm:text-3xl md:text-4xl">
+              <div className="text-2xl sm:text-3xl md:text-4xl filter hover:hue-rotate-180 transition-all duration-300">
                 {tech.icon}
               </div>
-              <div className="text-center flex justify-center flex-col text-[#37322F] text-xs sm:text-sm md:text-base font-medium leading-tight font-sans">
+              <div className="text-center flex justify-center flex-col text-xs sm:text-sm md:text-base font-semibold leading-tight font-sans transition-colors duration-300" style={{color: '#3b82f6'}}>
                 {tech.name}
               </div>
             </div>

@@ -2,7 +2,7 @@
 
 export default function CTASection() {
   return (
-    <div className="w-full bg-white flex flex-col justify-center items-center">
+    <div className="w-full bg-gradient-to-br from-white via-blue-50/20 to-slate-50 flex flex-col justify-center items-center">
       {/* Content */}
       <section className="w-full py-20 sm:py-24 md:py-32 flex flex-col items-center px-6 sm:px-8 md:px-12">
         <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-8">
@@ -23,7 +23,7 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a 
               href="#products"
-              className="px-8 py-4 bg-[#37322F] text-white rounded-full font-semibold text-base hover:bg-[#1F1B19] transition-all duration-200 shadow-sm hover:shadow-md text-center"
+              className="px-8 py-4 bg-gradient-to-r from-[#37322F] to-slate-700 text-white rounded-full font-semibold text-base hover:from-[#1F1B19] hover:to-slate-800 transition-all duration-200 shadow-lg hover:shadow-blue-200/50 hover:shadow-xl text-center"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });

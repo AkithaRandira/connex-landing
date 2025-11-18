@@ -22,14 +22,14 @@ export default function LandingPage() {
   }, [])
 
   return (
-    <div className="w-full min-h-screen bg-[#F7F5F3] overflow-x-hidden">
+    <div className="w-full min-h-screen bg-gradient-to-br from-[#F7F5F3] via-[#F5F6F8] to-[#F7F5F3] overflow-x-hidden">
       {/* Floating Navbar */}
       <nav className="fixed top-6 left-0 w-full z-50 flex justify-center px-6 sm:px-8 md:px-12 lg:px-16">
         <div
-          className={`w-full max-w-4xl h-12 sm:h-14 md:h-[58px] px-6 bg-white/90 backdrop-blur-xl border border-[rgba(55,50,47,0.12)] rounded-full flex justify-between items-center transition-all duration-300 ${
+          className={`w-full max-w-4xl h-12 sm:h-14 md:h-[58px] px-6 bg-white/95 backdrop-blur-xl border border-[rgba(55,50,47,0.12)] rounded-full flex justify-between items-center transition-all duration-300 ${
             scrolled
-              ? "shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
-              : "shadow-[0_4px_14px_rgba(0,0,0,0.05)]"
+              ? "shadow-[0_8px_24px_rgba(59,130,246,0.08)]"
+              : "shadow-[0_4px_14px_rgba(59,130,246,0.04)]"
           }`}
         >
           {/* Logo */}
@@ -91,7 +91,7 @@ export default function LandingPage() {
           </div>
 
           {/* CTA */}
-          <button className="px-5 py-2 bg-[#2F3037] text-white rounded-full text-sm font-medium hover:bg-[#1F2024] transition shadow-sm">
+          <button className="px-5 py-2 bg-[#2F3037] text-white rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-[#1F2024] hover:to-[#1e293b] transition shadow-sm">
             Contact Us
           </button>
         </div>
