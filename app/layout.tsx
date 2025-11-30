@@ -19,25 +19,25 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Zentria Labs — Zentralizing Your Workflows",
-  description: "Zentria Labs is a software studio building micro-SaaS products that streamline workflows and boost productivity. Discover SubChecks and our upcoming tools.",
-  keywords: ["SaaS", "micro-SaaS", "workflow automation", "productivity tools", "software studio", "SubChecks", "Zentria Labs"],
-  authors: [{ name: "Zentria Labs" }],
-  creator: "Zentria Labs",
-  publisher: "Zentria Labs",
+  title: "Connex99 — Intelligent Business Automation",
+  description: "Connex99 provides intelligent automation solutions for modern businesses. Streamline operations, eliminate manual work, and scale with AI-powered tools.",
+  keywords: ["business automation", "AI automation", "workflow automation", "process automation", "SaaS", "productivity tools", "Connex99"],
+  authors: [{ name: "Connex99" }],
+  creator: "Connex99",
+  publisher: "Connex99",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zentrialabs.com",
-    title: "Zentria Labs — Zentralizing Your Workflows",
-    description: "Software studio building micro-SaaS products that streamline workflows and boost productivity.",
-    siteName: "Zentria Labs",
+    url: "https://connex99.com",
+    title: "Connex99 — Intelligent Business Automation",
+    description: "Intelligent automation solutions for modern businesses. Streamline operations and boost productivity.",
+    siteName: "Connex99",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zentria Labs — Zentralizing Your Workflows",
-    description: "Software studio building micro-SaaS products that streamline workflows and boost productivity.",
-    creator: "@zentrialabs",
+    title: "Connex99 — Intelligent Business Automation",
+    description: "Intelligent automation solutions for modern businesses. Streamline operations and boost productivity.",
+    creator: "@connex99",
   },
   robots: {
     index: true,
@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} antialiased`}>
       <head>
-        <link rel="icon" href="/ZentriaLabs_Logo.png" sizes="any" />
+        <link rel="icon" href="/connex99.png" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

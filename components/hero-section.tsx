@@ -6,37 +6,39 @@ export default function HeroSection() {
       <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-8">
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
-          Transform Your Freelance Experience with Our SaaS Solutions
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight leading-[1.1] text-slate-800 font-serif">
+          Automate Your Business,
+          <br className="hidden sm:block" />
+          Amplify Your Growth
         </h1>
 
         {/* Subheading */}
-        <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
-          Effortlessly organize projects and manage clients with our specialized tools.
-          <br className="hidden sm:block" />
-         
+        <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed font-normal">
+          Streamline operations, eliminate repetitive tasks, and scale your business with intelligent automation solutions.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <a 
             href="#products" 
-            className="px-8 py-3 rounded-full bg-gradient-to-r from-[#37322F] to-slate-700 text-white font-medium hover:from-[#2A2520] hover:to-slate-800 transition-all shadow-lg hover:shadow-blue-200/30 hover:shadow-xl text-center"
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-blue-200/30 hover:shadow-xl text-center"
             onClick={(e) => {
               e.preventDefault();
               document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            Explore Our Products
+            Start Automating Today
           </a>
 
           <a 
-            href="https://subchecks.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-8 py-3 rounded-full bg-white text-[#37322F] font-medium border border-[rgba(55,50,47,0.12)] hover:bg-blue-50/50 hover:border-blue-200/50 transition-all shadow-sm hover:shadow-blue-100/50 text-center"
+            href="#about" 
+            className="px-8 py-3 rounded-full bg-white text-slate-700 font-medium border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all shadow-sm hover:shadow-slate-100/50 text-center"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
-            Learn about SubChecks →
+            See How It Works →
           </a>
         </div>
 

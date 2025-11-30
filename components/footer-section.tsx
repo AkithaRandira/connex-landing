@@ -9,14 +9,14 @@ export default function FooterSection() {
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
             <img 
-              src="/ZentriaLabs_Logo.png" 
-              alt="Zentria Labs Logo" 
-              className="h-8 w-auto"
+              src="/connex99.png" 
+              alt="Connex99 Logo" 
+              className="h-10 w-10 rounded-lg object-cover"
             />
-            <h2 className="text-2xl font-semibold">Zentria Labs</h2>
+            <h2 className="text-2xl font-semibold">Connex99</h2>
           </div>
           <p className="text-sm text-gray-400">
-            Building micro-SaaS tools for modern workflows.
+            Intelligent automation solutions for modern businesses.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function FooterSection() {
       {/* Copyright Row */}
       <div className="w-full py-6 flex justify-center">
         <p className="text-xs text-gray-500">
-          © 2025 ZentriaLabs.com | All rights reserved.
+          © 2025 Connex99.com | All rights reserved.
         </p>
       </div>
     </footer>

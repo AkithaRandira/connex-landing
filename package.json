@@ -1,7 +1,7 @@
 {
-  "name": "zentria-labs-landing",
+  "name": "connex99-landing",
   "version": "1.0.0",
-  "description": "Zentria Labs - Engineering-focused software studio building micro-SaaS products",
+  "description": "Connex99 - Intelligent automation solutions for modern businesses",
   "private": true,
   "scripts": {
     "build": "next build",

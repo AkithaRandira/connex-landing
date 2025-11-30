@@ -8,36 +8,32 @@ export default function CTASection() {
         <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-8">
           
           {/* Headline */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
-            Ready to Transform Your Workflow?
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-slate-800 font-serif">
+            Ready to Automate Your Business?
           </h2>
           
           {/* Subheading */}
-          <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
-            Join thousands of freelancers who've streamlined their work
-            <br className="hidden sm:block" />
-
+          <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed font-normal">
+            Join forward-thinking businesses that have eliminated manual work and boosted productivity.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a 
               href="#products"
-              className="px-8 py-4 bg-gradient-to-r from-[#37322F] to-slate-700 text-white rounded-full font-semibold text-base hover:from-[#1F1B19] hover:to-slate-800 transition-all duration-200 shadow-lg hover:shadow-blue-200/50 hover:shadow-xl text-center"
+              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold text-base hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-lg hover:shadow-blue-200/50 hover:shadow-xl text-center"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Explore Our Products
+              Start Your Automation Journey
             </a>
             <a 
-              href="https://subchecks.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-white border-2 border-[#37322F] text-[#37322F] rounded-full font-semibold text-base hover:bg-[#37322F] hover:text-white transition-all duration-200 text-center"
+              href="#contact"
+              className="px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 rounded-full font-semibold text-base hover:bg-blue-600 hover:text-white transition-all duration-200 text-center"
             >
-              Try SubChecks Free
+              Schedule a Demo
             </a>
           </div>
         </div>

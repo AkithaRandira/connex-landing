@@ -18,20 +18,19 @@ export default function ProductsSection() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className="w-full bg-gradient-to-b from-[#F7F5F3] via-[#F5F6F8] to-white">
+    <div className="w-full bg-gradient-to-b from-slate-50 via-blue-50/20 to-white">
       {/* Header Section */}
       <section className="w-full py-20 sm:py-24 md:py-32 flex flex-col items-center px-6 sm:px-8 md:px-12">
         <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-6">
           
           {/* Headline */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
-            Built for Modern Workflows
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-slate-800 font-serif">
+            Powerful Automation Tools
           </h2>
           
           {/* Subheading */}
-          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
-            <br className="hidden sm:block" />
-            Clean interfaces and powerful automation for freelancers.
+          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed font-normal">
+            Transform your business operations with our suite of intelligent automation solutions.
           </p>
         </div>
       </section>
@@ -46,20 +45,19 @@ export default function ProductsSection() {
               <div className="p-8 md:p-12 bg-white">
                 <div className="max-w-4xl mx-auto space-y-6 text-center">
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
                       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        <circle cx="12" cy="12" r="9" stroke="white" strokeWidth="1.5" fill="none"/>
+                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="white"/>
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-3xl md:text-4xl font-bold">SubChecks</h3>
-                      <p className="text-sm text-muted-foreground font-medium">Subscription Management</p>
+                      <h3 className="text-3xl md:text-4xl font-bold">Connex99 Pro</h3>
+                      <p className="text-sm text-muted-foreground font-medium">Business Process Automation</p>
                     </div>
                   </div>
                   
                   <p className="text-muted-foreground text-base leading-relaxed max-w-xl mx-auto">
-                    Track and manage all your subscriptions in one place. Get notified before renewals and never lose track of recurring payments.
+                    Streamline your business processes with intelligent automation. From lead management to customer onboarding, automate repetitive tasks and boost productivity.
                   </p>
                 </div>
               </div>
@@ -81,17 +79,21 @@ export default function ProductsSection() {
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
-                      subchecks.com
+                      connex99.com
                     </div>
                   </div>
                   
                   {/* Website Preview Image */}
-                  <div className="w-full h-[calc(100%-2.25rem)] bg-white">
-                    <img 
-                      src="/subchecks.png"
-                      alt="SubChecks Preview"
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="w-full h-[calc(100%-2.25rem)] bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="white"/>
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-semibold text-slate-800 mb-2">Coming Soon</h4>
+                      <p className="text-slate-600">Revolutionary automation platform in development</p>
+                    </div>
                   </div>
 
                   {/* Small External Link Icon - Top Right Corner */}
@@ -111,11 +113,11 @@ export default function ProductsSection() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button 
                       size="lg"
-                      className="rounded-full px-10 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                      className="rounded-full px-10 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
                       asChild
                     >
-                      <a href="https://subchecks.com" target="_blank" rel="noopener noreferrer">
-                        Try SubChecks Free
+                      <a href="#contact">
+                        Join Waitlist
                       </a>
                     </Button>
                     <Button 
@@ -124,7 +126,7 @@ export default function ProductsSection() {
                       className="rounded-full px-10 py-3 text-base font-semibold border-2 hover:bg-muted/50 transition-all"
                       asChild
                     >
-                      <a href="https://subchecks.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <a href="#about" className="flex items-center gap-2">
                         Learn More
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6 12l4-4-4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

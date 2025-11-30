@@ -17,13 +17,13 @@ export default function AboutSection() {
       <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-6">
 
         {/* Headline */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-[#37322F] font-serif">
-          Engineering Focused Software Studio
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-slate-800 font-serif">
+          Business Automation Made Simple
         </h2>
 
         {/* Subheading */}
-        <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-[#605A57] leading-relaxed font-normal">
-          We're a team of engineers building targeted micro-SaaS solutions.
+        <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed font-normal">
+          We build intelligent automation tools that help businesses eliminate manual work and focus on what matters most.
         </p>
 
       </div>

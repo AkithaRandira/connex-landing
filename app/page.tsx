@@ -22,7 +22,7 @@ export default function LandingPage() {
   }, [])
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-[#F7F5F3] via-[#F5F6F8] to-[#F7F5F3] overflow-x-hidden">
+    <div className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20 overflow-x-hidden">
       {/* Floating Navbar */}
       <nav className="fixed top-6 left-0 w-full z-50 flex justify-center px-6 sm:px-8 md:px-12 lg:px-16">
         <div
@@ -33,66 +33,66 @@ export default function LandingPage() {
           }`}
         >
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 text-[#2F3037] text-sm sm:text-base md:text-lg font-semibold whitespace-nowrap">
+          <a href="/" className="flex items-center gap-2 text-slate-800 text-sm sm:text-base md:text-lg font-semibold whitespace-nowrap">
             <img 
-              src="/ZentriaLabs_Logo.png" 
-              alt="Zentria Labs Logo" 
-              className="h-6 w-auto"
+              src="/connex99.png" 
+              alt="Connex99 Logo" 
+              className="h-8 w-8 rounded-lg object-cover"
             />
-            Zentria Labs
+            Connex99
           </a>
 
           {/* Links */}
           <div className="hidden md:flex items-center gap-2 absolute left-1/2 -translate-x-1/2">
             <a 
               href="#about" 
-              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              className="relative text-sm text-slate-600 hover:text-slate-800 transition-colors duration-150 px-3 py-2 rounded-full group"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <span className="relative z-10">Company</span>
-              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+              <span className="relative z-10">Solutions</span>
+              <span className="absolute inset-0 bg-blue-100/60 rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
             <a 
               href="#products" 
-              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              className="relative text-sm text-slate-600 hover:text-slate-800 transition-colors duration-150 px-3 py-2 rounded-full group"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <span className="relative z-10">Products</span>
-              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+              <span className="relative z-10">Automation</span>
+              <span className="absolute inset-0 bg-blue-100/60 rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
             <a 
               href="#why-choose" 
-              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              className="relative text-sm text-slate-600 hover:text-slate-800 transition-colors duration-150 px-3 py-2 rounded-full group"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('why-choose')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <span className="relative z-10">About</span>
-              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+              <span className="relative z-10">Company</span>
+              <span className="absolute inset-0 bg-blue-100/60 rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
             <a 
               href="#future-products" 
-              className="relative text-sm text-[rgba(49,45,43,0.80)] hover:text-[#2F3037] transition-colors duration-150 px-3 py-2 rounded-full group"
+              className="relative text-sm text-slate-600 hover:text-slate-800 transition-colors duration-150 px-3 py-2 rounded-full group"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('future-products')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <span className="relative z-10">Blog</span>
-              <span className="absolute inset-0 bg-[rgba(55,50,47,0.08)] rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
+              <span className="relative z-10">Resources</span>
+              <span className="absolute inset-0 bg-blue-100/60 rounded-full scale-0 group-hover:scale-100 transition-transform duration-200 ease-out"></span>
             </a>
           </div>
 
           {/* CTA */}
-          <button className="px-5 py-2 bg-[#2F3037] text-white rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-[#1F2024] hover:to-[#1e293b] transition shadow-sm">
-            Contact Us
+          <button className="px-5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full text-sm font-medium hover:from-blue-700 hover:to-indigo-700 transition shadow-sm">
+            Get Started
           </button>
         </div>
       </nav>
