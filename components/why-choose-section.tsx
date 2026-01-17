@@ -99,15 +99,15 @@ export default function WhyChooseSection() {
       </div>
 
       {/* Tech Stack Section */}
-      <div className="w-full py-16 sm:py-20 md:py-24 bg-slate-50 flex justify-center">
+      <div className="w-full py-16 sm:py-20 md:py-24 bg-[#2D3047] flex justify-center">
         <div className="w-full max-w-5xl px-6 sm:px-8 md:px-12 flex flex-col items-center text-center space-y-12">
           
           {/* Tech Stack Header */}
           <div className="space-y-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-slate-800 font-serif">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-white font-serif">
               Enterprise-Grade Technology
             </h2>
-            <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed font-normal">
+            <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed font-normal">
               Built on modern, reliable infrastructure that powers Fortune 500 companies.
               <br className="hidden sm:block" />
               Secure, scalable, and always available.

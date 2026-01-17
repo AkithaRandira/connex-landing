@@ -18,18 +18,18 @@ export default function ProductsSection() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className="w-full bg-gradient-to-b from-slate-50 via-blue-50/20 to-white">
+    <div className="w-full bg-[#2D3047]">
       {/* Header Section */}
       <section className="w-full py-20 sm:py-24 md:py-32 flex flex-col items-center px-6 sm:px-8 md:px-12">
         <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-6">
           
           {/* Headline */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-slate-800 font-serif">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-white font-serif">
             Powerful Automation Tools
           </h2>
           
           {/* Subheading */}
-          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed font-normal">
+          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed font-normal">
             Transform your business operations with our suite of intelligent automation solutions.
           </p>
         </div>
@@ -39,13 +39,13 @@ export default function ProductsSection() {
       <div className="container mx-auto px-6 pb-32">
         <div className="max-w-7xl mx-auto">
           {/* SubChecks Product Card */}
-          <Card className="overflow-hidden border-2 hover:border-blue-200 transition-all duration-300 hover:shadow-[0_20px_60px_rgba(59,130,246,0.15)] bg-gradient-to-br from-white to-blue-50/30">
+          <Card className="overflow-hidden border-2 hover:border-[#7209B7] transition-all duration-300 hover:shadow-[0_20px_60px_rgba(114,9,183,0.15)] bg-gradient-to-br from-white to-purple-50/30">
             <div className="flex flex-col">
               {/* Content Section - Above Preview */}
               <div className="p-8 md:p-12 bg-white">
                 <div className="max-w-4xl mx-auto space-y-6 text-center">
                   <div className="flex items-center justify-center gap-4 mb-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-14 h-14 bg-[#7209B7] rounded-2xl flex items-center justify-center shadow-lg">
                       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="white"/>
                       </svg>
@@ -84,9 +84,9 @@ export default function ProductsSection() {
                   </div>
                   
                   {/* Website Preview Image */}
-                  <div className="w-full h-[calc(100%-2.25rem)] bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center">
+                  <div className="w-full h-[calc(100%-2.25rem)] bg-gradient-to-br from-purple-50 to-violet-50 flex items-center justify-center">
                     <div className="text-center p-8">
-                      <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
+                      <div className="w-24 h-24 bg-[#7209B7] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="white"/>
                         </svg>
@@ -113,7 +113,7 @@ export default function ProductsSection() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button 
                       size="lg"
-                      className="rounded-full px-10 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
+                      className="rounded-full px-10 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-[#7209B7] hover:bg-[#8a2ac7]"
                       asChild
                     >
                       <a href="#contact">
@@ -123,7 +123,7 @@ export default function ProductsSection() {
                     <Button 
                       size="lg"
                       variant="outline"
-                      className="rounded-full px-10 py-3 text-base font-semibold border-2 hover:bg-muted/50 transition-all"
+                      className="rounded-full px-10 py-3 text-base font-semibold border-2 border-[#7209B7] text-[#7209B7] hover:bg-[#7209B7] hover:text-white transition-all"
                       asChild
                     >
                       <a href="#about" className="flex items-center gap-2">

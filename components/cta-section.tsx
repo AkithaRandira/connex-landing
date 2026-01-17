@@ -21,7 +21,7 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a 
               href="#products"
-              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold text-base hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-lg hover:shadow-blue-200/50 hover:shadow-xl text-center"
+              className="px-8 py-4 bg-[#7209B7] text-white rounded-full font-semibold text-base hover:bg-[#8a2ac7] transition-all duration-200 shadow-lg hover:shadow-[#7209B7]/50 hover:shadow-xl text-center"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
@@ -31,7 +31,7 @@ export default function CTASection() {
             </a>
             <a 
               href="#contact"
-              className="px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 rounded-full font-semibold text-base hover:bg-blue-600 hover:text-white transition-all duration-200 text-center"
+              className="px-8 py-4 bg-white border-2 border-[#7209B7] text-[#7209B7] rounded-full font-semibold text-base hover:bg-[#7209B7] hover:text-white transition-all duration-200 text-center"
             >
               Schedule a Demo
             </a>

@@ -60,13 +60,13 @@ export default function FutureProductsSection() {
             {upcomingProducts.map((product, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col gap-4"
+                className="group bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:border-[#7209B7] transition-all duration-300 flex flex-col gap-4"
               >
                 <div className="flex items-center justify-between">
-                  <div className="px-3 py-1 bg-blue-50 rounded-full text-xs font-semibold text-blue-700 font-sans">
+                  <div className="px-3 py-1 bg-purple-50 rounded-full text-xs font-semibold text-[#7209B7] font-sans">
                     {product.category}
                   </div>
-                  <div className="px-3 py-1 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-full text-xs font-semibold text-indigo-700">
+                  <div className="px-3 py-1 bg-gradient-to-r from-purple-50 to-violet-50 border border-[#7209B7]/30 rounded-full text-xs font-semibold text-[#7209B7]">
                     {product.status}
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function FutureProductsSection() {
                     {product.description}
                   </p>
                 </div>
-                <button className="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors duration-200 self-start group-hover:translate-x-1 transition-transform">
+                <button className="text-[#7209B7] text-sm font-semibold hover:text-[#8a2ac7] transition-colors duration-200 self-start group-hover:translate-x-1 transition-transform">
                   Get Early Access →
                 </button>
               </div>
